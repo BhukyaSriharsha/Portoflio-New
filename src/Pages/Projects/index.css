@@ -1,0 +1,204 @@
+body {
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.projects-container {
+    position: relative; /* Changed from sticky */
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #000000, #2E003E);
+}
+
+.project-head{
+     margin-top: 8vh;
+   /* Reduced from 10vh */
+  font-size: 2.5rem;
+  color: #00ffff;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 10vh;
+}
+
+
+.box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 400px;
+    background: #060c21;
+    padding: 20px;
+    margin: 20px;
+}
+
+.box .content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #ddd;
+    letter-spacing: 0.1rem;
+    
+}
+
+.box .content h1 {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+
+
+.box .content h3 {
+    font-size: clamp(1rem, 3vw, 0.5rem);
+    width: 90%;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.box .glass {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: block;
+    pointer-events: none;
+}
+
+.box::before,
+.box::after {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    z-index: -1;
+}
+
+.box:nth-child(1):before,
+.box:nth-child(1):after {
+    background: conic-gradient(from var(--angle), #0c63e7, #060c21, #d11149, #060c21, #0c63e7);
+}
+
+.box:nth-child(2):before,
+.box:nth-child(2):after {
+    background: conic-gradient(from var(--angle), #f35807, #060c21, #36d709, #060c21, #f35807);
+}
+
+.box::after {
+    z-index: -2;
+    filter: blur(20px);
+}
+
+.box:hover::before,
+.box:hover::after {
+    animation: glowing-border 3.5s linear infinite;
+}
+
+.box:hover::after {
+    animation: glowing-border 3.5s linear infinite, blur-effect 3.5s linear infinite;
+}
+
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 53deg;
+    inherits: false;
+}
+
+@keyframes glowing-border {
+    from {
+        --angle: 53deg;
+    }
+
+    to {
+        --angle: 413deg;
+    }
+}
+
+@keyframes blur-effect {
+    from {
+        filter: blur(20px);
+    }
+
+    to {
+        filter: blur(19px);
+    }
+}
+
+.food-munch-project-image{
+    width: 400px;
+    height: 250x;
+}
+
+
+
+.card-tags {
+  margin-bottom: 18px;
+}
+
+.tag {
+  background: #221948;
+  color: #b089fa;
+  border-radius: 16px;
+  padding: 4px 14px;
+  margin-left: 15px;
+  margin-right: 2px;
+  font-size: 0.6em;
+  display: inline-block;
+}
+
+.card-actions {
+  display: flex;
+  gap: 12px;
+  margin-left: 15px;
+}
+
+.btn {
+  background: #181a2a;
+  border: 1px solid #282a42;
+  color: #fff;
+  border-radius: 7px;
+  padding: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  
+}
+
+.btn.demo {
+  background: #23254a;
+}
+
+.btn.code {
+  background: #181a2a;
+}
+
+.btn:hover {
+  background: #464973;
+}
+
+.link-icon{
+    height: 13px;
+}
+
+.github-icon{
+    height: 13px;
+}

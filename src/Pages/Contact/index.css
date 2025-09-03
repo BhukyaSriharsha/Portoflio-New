@@ -1,0 +1,24 @@
+.contact-container {
+  position: relative; /* Changed from sticky */
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+   background: black;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contact-head{
+    text-align: center;
+}
+
+.like-container{
+    width: fit-content;
+    align-self: flex-end;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+

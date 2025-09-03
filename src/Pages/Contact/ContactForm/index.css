@@ -1,0 +1,135 @@
+.contactForm-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  color: #fff;
+  border-radius: 12px;
+}
+
+.contact-form, .contact-info {
+  background: rgba(255, 255, 255, 0.1); /* transparent white */
+  border-radius: 16px;
+  backdrop-filter: blur(10px); /* frosted glass */
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  color: #fff; /* text looks better on glass */
+  width: 300px;
+  height: fit-content;
+}
+
+.contact-form h2, .contact-info h2 {
+    font-size: 18px;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form p, .contact-info p {
+  color: #aaa;
+  font-size: 0.8rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.contact-form label {
+  margin: 0.5rem 0 0.2rem;
+  font-size: 0.9em;
+}
+
+.contact-form button {
+  margin-top: 1rem;
+  background: #757f9a;
+  border: none;
+  color: white;
+  background: #757F9A;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #232526;
+  border: 1px solid #757f9a;
+  color: #757f9a;
+}
+
+/* Toast Notification */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #232526; /* default dark */
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  animation: fadeInOut 4s forwards;
+  z-index: 1000;
+}
+
+/* Success & Error Variants */
+.toast.success {
+  background: #28a745; /* green */
+}
+.toast.error {
+  background: #dc3545; /* red */
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(30px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(30px); }
+}
+
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.15);  /* frosted glass */
+  outline: none;
+  font-size: 1rem;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: 0.3s ease;
+  color:  white;
+  height: 13px;
+  margin-bottom: 2px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 80px;
+  max-height: 150px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid #757f9a;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.contact-accnts{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+    color: silver;
+    margin-top: 20px;
+}
+
+.links{
+    text-decoration: none;
+    color: silver;
+}
+
