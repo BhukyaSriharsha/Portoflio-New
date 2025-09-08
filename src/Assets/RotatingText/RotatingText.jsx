@@ -23,8 +23,6 @@ const RotatingText = forwardRef((props, ref) => {
     initial = { y: "100%", opacity: 0 },   // enters from bottom
     animate = { y: 0, opacity: 1 },        // visible
     exit = { y: "-100%", opacity: 0 },     // slides up when leaving
-    animatePresenceMode = "wait",
-    animatePresenceInitial = false,
     rotationInterval = 2000,
     staggerDuration = 0,
     staggerFrom = "first",
