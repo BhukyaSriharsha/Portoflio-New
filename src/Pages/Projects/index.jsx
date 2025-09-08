@@ -75,16 +75,16 @@ const Projects = () => {
           <div className="glass"></div>
           <div className="content">
             <img src={NxtTrendsImg} alt="Food Munch" className="food-munch-project-image" />
-            <h1>Food Munch</h1>
-            <h3>A responsive food ordering platform with dynamic UI, smooth animations, and fast performance.</h3>
+            <h1>NXT Trendz</h1>
+            <h3>Built a responsive shopping platform with user authentication, product search, listing, Prime Deals, and error handling.</h3>
             <div className="card-tags">
-        <span className="tag">Html</span>
+        <span className="tag">React</span>
         <span className="tag">Css</span>
-        <span className="tag">JavaScript</span>
+        
       </div>
       <div className="card-actions">
-        <a href="https://fdmnch13.ccbp.tech/" className="btn demo"><span> Demo</span><FaLink size={24} className='link-icon' /></a>
-        <a href="https://github.com/BhukyaSriharsha/Food-Munch.git" className="btn code"><FaGithub size={40} className='github-icon' /><span> Code</span></a>
+        <a href="http://localhost:3000/" className="btn demo"><span> Demo</span><FaLink size={24} className='link-icon' /></a>
+        <a href="http://localhost:3000/" className="btn code"><FaGithub size={40} className='github-icon' /><span> Code</span></a>
       </div>
           </div>
         </div>
